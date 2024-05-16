@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotoğrafçı Portföyü</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        header, footer {
+            background-color: #000;
+            color: #fff;
+            text-align: center;
+            padding: 1em 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+        .gallery img {
+            width: 100%;
+            height: auto;
+        }
+        .gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 15px;
+        }
+        .bio, .contact {
+            margin: 2em 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fotoğrafçı Adı</h1>
+        <nav>
+            <a href="#gallery">Galeri</a>
+            <a href="#bio">Biyografi</a>
+            <a href="#contact">İletişim</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section id="gallery" class="gallery">
+            <h2>Portföy</h2>
+            <img src="https://via.placeholder.com/600x400" alt="Fotoğraf 1">
+            <img src="https://via.placeholder.com/600x400" alt="Fotoğraf 2">
+            <img src="https://via.placeholder.com/600x400" alt="Fotoğraf 3">
+            <!-- Daha fazla fotoğraf ekleyebilirsiniz -->
+        </section>
+
+        <section id="bio" class="bio">
+            <h2>Biyografi</h2>
+            <p>Profesyonel fotoğrafçı hakkında kısa bir biyografi metni buraya gelecek.</p>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>İletişim</h2>
+            <p>Email: <a href="mailto:ornek@example.com">ornek@example.com</a></p>
+            <p>Telefon: 0123 456 789</p>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fotoğrafçı Adı. Tüm hakları saklıdır.</p>
+    </footer>
+</body>
+</html>
